@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b04f7d3966b045edbeb9de0cfa81025c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b04f7d3966b045edbeb9de0cfa81025c" ></div>
+        
+</body>
+<script>    
+    
+            var map_b04f7d3966b045edbeb9de0cfa81025c = L.map(
+                "map_b04f7d3966b045edbeb9de0cfa81025c",
+                {
+                    center: [46.25, 20.15],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bfc512b745154a728fca8e5c1e59565e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+            var marker_aa2c93b9b86444dcb7b07ed12137124c = L.marker(
+                [46.25, 20.15],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+            var div_icon_a3a1e769bc75457db8c672234ca8d972 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial; font-size: 30px;color: gray\"\u003e11\u003c/div\u003e"});
+            marker_aa2c93b9b86444dcb7b07ed12137124c.setIcon(div_icon_a3a1e769bc75457db8c672234ca8d972);
+        
+    
+            var marker_d1940efedc3a4383a251a5faf94b7eb9 = L.marker(
+                [46.55, 20.15],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+        var custom_icon_f65cc2c3004c4d2bb9819a511fe3cc41 = L.icon({"iconSize": [50, 50], "iconUrl": "http://openweathermap.org/img/wn/01d.png"});
+        marker_d1940efedc3a4383a251a5faf94b7eb9.setIcon(custom_icon_f65cc2c3004c4d2bb9819a511fe3cc41);
+        
+    
+            var marker_fd0cad3f2f9d41a39281aba1aea016c0 = L.marker(
+                [46.877, 19.476],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+            var div_icon_700285e85851441d87b85e5682468823 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial; font-size: 30px;color: gray\"\u003e11\u003c/div\u003e"});
+            marker_fd0cad3f2f9d41a39281aba1aea016c0.setIcon(div_icon_700285e85851441d87b85e5682468823);
+        
+    
+            var marker_970f7c4592e844fda1ab4a251290d67b = L.marker(
+                [47.177, 19.476],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+        var custom_icon_8a1064828d864b95b3ca153173ecb86e = L.icon({"iconSize": [50, 50], "iconUrl": "http://openweathermap.org/img/wn/03d.png"});
+        marker_970f7c4592e844fda1ab4a251290d67b.setIcon(custom_icon_8a1064828d864b95b3ca153173ecb86e);
+        
+    
+            var marker_1cea67c4727f4ae895fc991af24a70ba = L.marker(
+                [47.504000000000005, 18.802],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+            var div_icon_d5ac6d7803614ff8b29728745338fb71 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial; font-size: 30px;color: gray\"\u003e10\u003c/div\u003e"});
+            marker_1cea67c4727f4ae895fc991af24a70ba.setIcon(div_icon_d5ac6d7803614ff8b29728745338fb71);
+        
+    
+            var marker_38d1297132144e08af6b4cb082565703 = L.marker(
+                [47.804, 18.802],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+        var custom_icon_f6bf622559a84afa92b679018237a047 = L.icon({"iconSize": [50, 50], "iconUrl": "http://openweathermap.org/img/wn/03d.png"});
+        marker_38d1297132144e08af6b4cb082565703.setIcon(custom_icon_f6bf622559a84afa92b679018237a047);
+        
+    
+            var marker_ec48a6e7193c4e138e05b0842dc471cc = L.marker(
+                [48.13100000000001, 18.128],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+            var div_icon_06823f82aab248349a0e05d02f9aafcb = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial; font-size: 30px;color: gray\"\u003e10\u003c/div\u003e"});
+            marker_ec48a6e7193c4e138e05b0842dc471cc.setIcon(div_icon_06823f82aab248349a0e05d02f9aafcb);
+        
+    
+            var marker_34e7be6c44cd4e5e859f071e6e35d237 = L.marker(
+                [48.431000000000004, 18.128],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+        var custom_icon_d4fff11d3d974af38b8998775b5b4ab8 = L.icon({"iconSize": [50, 50], "iconUrl": "http://openweathermap.org/img/wn/03d.png"});
+        marker_34e7be6c44cd4e5e859f071e6e35d237.setIcon(custom_icon_d4fff11d3d974af38b8998775b5b4ab8);
+        
+    
+            var marker_e62abedea6774ee09f6530d91891ddce = L.marker(
+                [48.75800000000001, 17.454],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+            var div_icon_9560bdb2d0064eb7a1a68ba693e809ec = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial; font-size: 30px;color: gray\"\u003e9\u003c/div\u003e"});
+            marker_e62abedea6774ee09f6530d91891ddce.setIcon(div_icon_9560bdb2d0064eb7a1a68ba693e809ec);
+        
+    
+            var marker_f8e0ef3ce8b648a5b9588928b38a3b58 = L.marker(
+                [49.05800000000001, 17.454],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+        var custom_icon_8c96f149953149f182f4274e9ff45b84 = L.icon({"iconSize": [50, 50], "iconUrl": "http://openweathermap.org/img/wn/02d.png"});
+        marker_f8e0ef3ce8b648a5b9588928b38a3b58.setIcon(custom_icon_8c96f149953149f182f4274e9ff45b84);
+        
+    
+            var marker_427875b8576d4853b42682343378e611 = L.marker(
+                [49.38500000000001, 16.78],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+            var div_icon_4cd4002117a54997bc6c787384fd149a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial; font-size: 30px;color: gray\"\u003e8\u003c/div\u003e"});
+            marker_427875b8576d4853b42682343378e611.setIcon(div_icon_4cd4002117a54997bc6c787384fd149a);
+        
+    
+            var marker_c45692eb089044b6a20b6b6af8fcde6b = L.marker(
+                [49.68500000000001, 16.78],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+        var custom_icon_c4018737542041a0bdf896906ebf7034 = L.icon({"iconSize": [50, 50], "iconUrl": "http://openweathermap.org/img/wn/02d.png"});
+        marker_c45692eb089044b6a20b6b6af8fcde6b.setIcon(custom_icon_c4018737542041a0bdf896906ebf7034);
+        
+    
+            var marker_9cf870b506724d2bad7d51b135035d40 = L.marker(
+                [50.012000000000015, 16.106],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+            var div_icon_861734bb180c451f89aa4baf06b3fa04 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial; font-size: 30px;color: gray\"\u003e7\u003c/div\u003e"});
+            marker_9cf870b506724d2bad7d51b135035d40.setIcon(div_icon_861734bb180c451f89aa4baf06b3fa04);
+        
+    
+            var marker_de95d5b1158c41eda748f332a589cd15 = L.marker(
+                [50.31200000000001, 16.106],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+        var custom_icon_c962d7acc45246b19b1b724f9ce0f081 = L.icon({"iconSize": [50, 50], "iconUrl": "http://openweathermap.org/img/wn/04d.png"});
+        marker_de95d5b1158c41eda748f332a589cd15.setIcon(custom_icon_c962d7acc45246b19b1b724f9ce0f081);
+        
+    
+            var marker_e3632c4859854928a0e651eaed61a5e7 = L.marker(
+                [50.63900000000002, 15.432000000000002],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+            var div_icon_b83b72b56bbe402b9c2274f6ba37bcd4 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial; font-size: 30px;color: lightblue\"\u003e4\u003c/div\u003e"});
+            marker_e3632c4859854928a0e651eaed61a5e7.setIcon(div_icon_b83b72b56bbe402b9c2274f6ba37bcd4);
+        
+    
+            var marker_a3ae40087ce047abae14d5c104577162 = L.marker(
+                [50.939000000000014, 15.432000000000002],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+        var custom_icon_ccd4d5c4d7bd4ba48755d649143ce295 = L.icon({"iconSize": [50, 50], "iconUrl": "http://openweathermap.org/img/wn/04d.png"});
+        marker_a3ae40087ce047abae14d5c104577162.setIcon(custom_icon_ccd4d5c4d7bd4ba48755d649143ce295);
+        
+    
+            var marker_e3c3f4800ca64a40bd1059dc5d3198bc = L.marker(
+                [51.26600000000002, 14.758000000000003],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+            var div_icon_4f5f200698e04619bac79fa92ba17333 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial; font-size: 30px;color: gray\"\u003e6\u003c/div\u003e"});
+            marker_e3c3f4800ca64a40bd1059dc5d3198bc.setIcon(div_icon_4f5f200698e04619bac79fa92ba17333);
+        
+    
+            var marker_3e1ab56cab3c4ae58d2f03ac12ca7368 = L.marker(
+                [51.56600000000002, 14.758000000000003],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+        var custom_icon_38a32728aafa429a9e3ea627ecf36765 = L.icon({"iconSize": [50, 50], "iconUrl": "http://openweathermap.org/img/wn/04d.png"});
+        marker_3e1ab56cab3c4ae58d2f03ac12ca7368.setIcon(custom_icon_38a32728aafa429a9e3ea627ecf36765);
+        
+    
+            var marker_feea65cd8d374712b2224aca681bf2c9 = L.marker(
+                [51.89300000000002, 14.084000000000003],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+            var div_icon_108e1f35fe544418a4e206b1b6b50961 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial; font-size: 30px;color: gray\"\u003e7\u003c/div\u003e"});
+            marker_feea65cd8d374712b2224aca681bf2c9.setIcon(div_icon_108e1f35fe544418a4e206b1b6b50961);
+        
+    
+            var marker_acfa9cf0b5504be5adcc243cb57bcf60 = L.marker(
+                [52.19300000000002, 14.084000000000003],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+        var custom_icon_bc4fe579864c41078431a2a7134ee01b = L.icon({"iconSize": [50, 50], "iconUrl": "http://openweathermap.org/img/wn/04d.png"});
+        marker_acfa9cf0b5504be5adcc243cb57bcf60.setIcon(custom_icon_bc4fe579864c41078431a2a7134ee01b);
+        
+    
+            var marker_f0511574fa4c4189929fdb750a8cbdc0 = L.marker(
+                [52.520000000000024, 13.410000000000004],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+            var div_icon_eededa0f1c8b41d7909ad157b34d08af = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial; font-size: 30px;color: gray\"\u003e7\u003c/div\u003e"});
+            marker_f0511574fa4c4189929fdb750a8cbdc0.setIcon(div_icon_eededa0f1c8b41d7909ad157b34d08af);
+        
+    
+            var marker_1bc85fb125564a5f84f13f427745a56f = L.marker(
+                [52.82000000000002, 13.410000000000004],
+                {}
+            ).addTo(map_b04f7d3966b045edbeb9de0cfa81025c);
+        
+    
+        var custom_icon_f390e706fc4744e099814e27d54fac98 = L.icon({"iconSize": [50, 50], "iconUrl": "http://openweathermap.org/img/wn/03d.png"});
+        marker_1bc85fb125564a5f84f13f427745a56f.setIcon(custom_icon_f390e706fc4744e099814e27d54fac98);
+        
+</script>
